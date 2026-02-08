@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Agency Portfolio | Featured Projects</title>
+  <meta name="description" content="Discover Elite Agency's portfolio of web design, Shopify, and branding projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <nav class="navbar container" aria-label="Primary">
+      <a class="logo" href="index.html" aria-label="Elite Agency">
+        <svg class="logo__mark" viewBox="0 0 44 44" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="elite-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#111827" />
+              <stop offset="100%" stop-color="#4b5563" />
+            </linearGradient>
+          </defs>
+          <circle cx="22" cy="22" r="20" fill="url(#elite-gradient)" />
+          <path d="M14 26l8-14 8 14H14z" fill="#fff" />
+        </svg>
+        <span>Elite Agency</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" class="is-active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero__content animate-on-scroll">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Design work crafted for impact and clarity.</h1>
+        <p>Explore a curated selection of digital launches, brand systems, and e-commerce builds.</p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="card-grid card-grid--portfolio">
+          <article class="card card--media portfolio-card animate-on-scroll">
+            <button class="portfolio-card__button" type="button" data-modal="modal-nova">
+              <div class="card__media">
+                <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1000&q=80" alt="Minimal workspace" />
+              </div>
+              <div class="card__content">
+                <h3>Nova Workspace</h3>
+                <p>SaaS redesign focused on conversion and clarity.</p>
+              </div>
+            </button>
+          </article>
+          <article class="card card--media portfolio-card animate-on-scroll">
+            <button class="portfolio-card__button" type="button" data-modal="modal-orbit">
+              <div class="card__media">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Creative team collaborating" />
+              </div>
+              <div class="card__content">
+                <h3>Orbit Commerce</h3>
+                <p>Shopify launch for a luxury fashion label.</p>
+              </div>
+            </button>
+          </article>
+          <article class="card card--media portfolio-card animate-on-scroll">
+            <button class="portfolio-card__button" type="button" data-modal="modal-studio">
+              <div class="card__media">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" alt="Team meeting" />
+              </div>
+              <div class="card__content">
+                <h3>Studio North</h3>
+                <p>Brand identity and experience design for a creative studio.</p>
+              </div>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal-nova" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="Close">×</button>
+        <h3>Nova Workspace</h3>
+        <p>We delivered a refreshed SaaS landing page with improved messaging hierarchy and UX flows.</p>
+      </div>
+    </div>
+    <div class="modal" id="modal-orbit" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="Close">×</button>
+        <h3>Orbit Commerce</h3>
+        <p>Complete Shopify setup including theme customization, product strategy, and launch support.</p>
+      </div>
+    </div>
+    <div class="modal" id="modal-studio" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="Close">×</button>
+        <h3>Studio North</h3>
+        <p>Brand identity, website, and content system for a creative production studio.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div>
+        <h3>Elite Agency</h3>
+        <p>Design-led digital agency for ambitious brands.</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.behance.net" target="_blank" rel="noreferrer">Behance</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </div>
+    <p class="footer__copyright">© 2024 Elite Agency. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
