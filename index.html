@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Agency | Modern Digital Agency</title>
+  <meta name="description" content="Elite Agency is a modern digital agency specializing in web design, Shopify setup, and branding experiences that convert." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <nav class="navbar container" aria-label="Primary">
+      <a class="logo" href="index.html" aria-label="Elite Agency">
+        <svg class="logo__mark" viewBox="0 0 44 44" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="elite-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#111827" />
+              <stop offset="100%" stop-color="#4b5563" />
+            </linearGradient>
+          </defs>
+          <circle cx="22" cy="22" r="20" fill="url(#elite-gradient)" />
+          <path d="M14 26l8-14 8 14H14z" fill="#fff" />
+        </svg>
+        <span>Elite Agency</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content animate-on-scroll">
+          <div class="hero__logo">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Elite Agency logo">
+              <defs>
+                <linearGradient id="elite-gradient-hero" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#111827" />
+                  <stop offset="100%" stop-color="#6b7280" />
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="32" r="30" fill="url(#elite-gradient-hero)" />
+              <path d="M20 38l12-20 12 20H20z" fill="#fff" />
+            </svg>
+            <span>Elite Agency</span>
+          </div>
+          <h1>Digital experiences designed to convert and inspire.</h1>
+          <p class="hero__subtitle">
+            We design, build, and launch premium digital experiences for ambitious brands ready to grow.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="contact.html">Get Started</a>
+            <a class="button button--ghost" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero__panel animate-on-scroll">
+          <div class="hero__card">
+            <p class="hero__label">Trusted by</p>
+            <h3>120+ teams</h3>
+            <p>Across SaaS, retail, and lifestyle industries.</p>
+          </div>
+          <div class="hero__card">
+            <p class="hero__label">Growth impact</p>
+            <h3>2.6x</h3>
+            <p>Average conversion lift after launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading animate-on-scroll">
+          <p class="eyebrow">Our Services</p>
+          <h2>Strategic design built for modern brands.</h2>
+          <p>Everything you need to launch, scale, and elevate your digital presence.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card animate-on-scroll">
+            <div class="card__icon">🎨</div>
+            <h3>Web Design</h3>
+            <p>Custom, responsive sites crafted for clarity, storytelling, and conversions.</p>
+          </article>
+          <article class="card animate-on-scroll">
+            <div class="card__icon">🛍️</div>
+            <h3>Shopify Setup</h3>
+            <p>Premium Shopify stores with optimized UX, product strategy, and launch support.</p>
+          </article>
+          <article class="card animate-on-scroll">
+            <div class="card__icon">✨</div>
+            <h3>Branding</h3>
+            <p>Identity systems, messaging, and visuals that connect and build trust.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading animate-on-scroll">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Featured projects that blend style and strategy.</h2>
+          <p>Explore a snapshot of work designed to elevate premium brands.</p>
+        </div>
+        <div class="card-grid card-grid--portfolio">
+          <article class="card card--media animate-on-scroll">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1000&q=80" alt="Minimal workspace with laptop" />
+            </div>
+            <div class="card__content">
+              <h3>Nova Workspace</h3>
+              <p>Conversion-focused website refresh for a SaaS productivity platform.</p>
+            </div>
+          </article>
+          <article class="card card--media animate-on-scroll">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Creative team collaborating" />
+            </div>
+            <div class="card__content">
+              <h3>Orbit Commerce</h3>
+              <p>Shopify launch strategy for a premium fashion label.</p>
+            </div>
+          </article>
+          <article class="card card--media animate-on-scroll">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" alt="Team meeting in modern office" />
+            </div>
+            <div class="card__content">
+              <h3>Studio North</h3>
+              <p>Brand identity and web presence for a creative studio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__content animate-on-scroll">
+        <div>
+          <h2>Ready to build your next digital moment?</h2>
+          <p>Let’s partner to create an experience your audience will love.</p>
+        </div>
+        <a class="button button--light" href="contact.html">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div>
+        <h3>Elite Agency</h3>
+        <p>Design-led digital agency for ambitious brands.</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.behance.net" target="_blank" rel="noreferrer">Behance</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </div>
+    <p class="footer__copyright">© 2024 Elite Agency. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
